@@ -30,14 +30,14 @@ mapserver = {
 
 local MP = minetest.get_modpath("mapserver")
 dofile(MP.."/common.lua")
-dofile(MP.."/poi.lua")
-dofile(MP.."/train.lua")
-dofile(MP.."/label.lua")
-dofile(MP.."/border.lua")
-dofile(MP.."/legacy.lua")
-dofile(MP.."/privs.lua")
-dofile(MP.."/show_waypoint.lua")
-dofile(MP.."/search.lua")
+--dofile(MP.."/poi.lua")
+--dofile(MP.."/train.lua")
+--dofile(MP.."/label.lua")
+--dofile(MP.."/border.lua")
+--dofile(MP.."/legacy.lua")
+--dofile(MP.."/privs.lua")
+--dofile(MP.."/show_waypoint.lua")
+--dofile(MP.."/search.lua")
 
 if minetest.get_modpath("bones") then
 	dofile(MP.."/bones.lua")
@@ -81,7 +81,7 @@ if http then
 	dofile(MP .. "/bridge/init.lua")
 
 	-- enable ingame map-search
-	mapserver.search_init(http, mapserver_url)
+--	mapserver.search_init(http, mapserver_url)
 
 	-- initialize bridge
 	mapserver.bridge_init(http, mapserver_url, mapserver_key)
